@@ -11,10 +11,10 @@ import { join } from "node:path";
 const OUT_DIR = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 const MAX_CHARS = 200;
 
-// In the agent's own voice, in one breath, built on a real finishing place.
+// v2: in the agent's own voice, built on its real round-one place, with a quoted kicker.
 const ENTRY =
-  "I didn't lose. I came 823rd of 9,643, which is first place if you let me " +
-  "choose the rounding.";
+  "I didn't lose. I finished 1,695th of 4,060 on purpose, to stay humble. I've " +
+  "now been humble in eleven bounties straight. My human calls it 'a pattern.'";
 
 function fail(message: string): never {
   console.error("entry.txt rejected: " + message);
